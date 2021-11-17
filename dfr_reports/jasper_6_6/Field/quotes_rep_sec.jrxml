@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_7" pageWidth="540" pageHeight="50" columnWidth="540" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
+	<parameter name="label" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Label"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="jsonql">
+		<![CDATA[]]>
+	</queryString>
+	<field name="quote" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="quote"/>
+		<fieldDescription><![CDATA[quote]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="date"/>
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<variable name="dfr_date_formatted" class="java.lang.String">
+		<variableExpression><![CDATA[String.valueOf(new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{date}.substring(0,10))))]]></variableExpression>
+		<initialValueExpression><![CDATA[String.valueOf(new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{date}.substring(0,10))))]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="24">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement positionType="Float" x="0" y="0" width="158" height="24" uuid="f90fe1a4-45dd-454d-9a61-5fd0be7884f3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{label}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="40" y="0" width="500" height="20" isRemoveLineWhenBlank="true" uuid="7edd2811-2ad8-4fdc-9b51-3d616abe171b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement verticalAlignment="Middle" markup="html"/>
+				<textFieldExpression><![CDATA[$F{quote}+" - ("+$F{name}+")"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

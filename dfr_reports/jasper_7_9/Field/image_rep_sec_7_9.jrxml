@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.9.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_7" columnCount="2" printOrder="Horizontal" pageWidth="540" pageHeight="230" columnWidth="270" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RUNE_FIELD"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="label" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["Label"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="resource_domain" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["https://api-test-dfr.ngm-inc.com/storage/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="jsonql">
+		<![CDATA[]]>
+	</queryString>
+	<field name="url" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="id.medium_url"/>
+		<fieldDescription><![CDATA[url]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="id.created_at"/>
+		<fieldDescription><![CDATA[created_at]]></fieldDescription>
+	</field>
+	<field name="uploader" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="uploader"/>
+		<fieldDescription><![CDATA[uploader]]></fieldDescription>
+	</field>
+	<field name="caption" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="caption"/>
+		<fieldDescription><![CDATA[caption]]></fieldDescription>
+	</field>
+	<field name="tags" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="tags"/>
+		<fieldDescription><![CDATA[tags]]></fieldDescription>
+	</field>
+	<variable name="parsed_created_date" class="java.lang.String">
+		<initialValueExpression><![CDATA[String.valueOf(new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{created_at}.substring(0,10))))]]></initialValueExpression>
+	</variable>
+	<filterExpression><![CDATA[!$F{url}.contains("pdf")]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="230">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="0" width="158" height="24" isPrintInFirstWholeBand="true" uuid="fc7d6a5a-c28c-46b9-b7d2-9b65ac6389a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT} == 1]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="2" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{label}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="0" y="24" width="265" height="155" isPrintWhenDetailOverflows="true" uuid="9dc6f7ad-42cc-45ef-9dfd-5330e0534319">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<image scaleImage="RetainShape" hAlign="Center" onErrorType="Icon">
+					<reportElement positionType="Float" x="0" y="0" width="265" height="150" isRemoveLineWhenBlank="true" uuid="b3bf0419-7218-4d43-9144-c789cf22877a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{resource_domain}+$F{url}]]></imageExpression>
+				</image>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="154" width="265" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a8920ce6-8aba-4465-bf2b-c188edb83812">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="0"/>
+					<textElement verticalAlignment="Top">
+						<font size="7.5"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Pattern letters are usually repeated, as their number determines the exact presentation:Pattern letters are usually repeated, as their number determin Pattern letters are usually repeated, as their number determines the exact presentation:Pattern letters are usually repeated, as their number determin"]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="152" width="265" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="ffcf2afd-a773-494f-813c-b402da6de912">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Uploaded: "+String.valueOf(new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{created_at}.substring(0,10))))+" ("+$F{uploader}+")"]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="0" y="153" width="265" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2ad43a66-afcc-4869-9343-e3f18cc30dae">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="0"/>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tags}.equals("")||$F{tags}==null? "":"Tags: "+$F{tags}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

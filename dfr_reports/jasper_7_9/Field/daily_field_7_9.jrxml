@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.9.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_6" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a6bdf3c-c48b-4670-b7b6-112bde5130e4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RUNE_FIELD"/>
+	<parameter name="resource_domain" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["https://api-test-dfr.ngm-inc.com/storage/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="jsonql">
+		<![CDATA[report_sections]]>
+	</queryString>
+	<field name="job_date" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.job_date"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="po" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.po"/>
+		<fieldDescription><![CDATA[po]]></fieldDescription>
+	</field>
+	<field name="address_area" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.address_area"/>
+		<fieldDescription><![CDATA[address_area]]></fieldDescription>
+	</field>
+	<field name="street" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.street"/>
+		<fieldDescription><![CDATA[street]]></fieldDescription>
+	</field>
+	<field name="city" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.city"/>
+		<fieldDescription><![CDATA[city]]></fieldDescription>
+	</field>
+	<field name="state" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.state"/>
+		<fieldDescription><![CDATA[state]]></fieldDescription>
+	</field>
+	<field name="zip" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.zip"/>
+		<fieldDescription><![CDATA[zip]]></fieldDescription>
+	</field>
+	<field name="lat" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.lat"/>
+		<fieldDescription><![CDATA[lat]]></fieldDescription>
+	</field>
+	<field name="lng" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.lng"/>
+		<fieldDescription><![CDATA[lng]]></fieldDescription>
+	</field>
+	<field name="account_id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.account_id"/>
+		<fieldDescription><![CDATA[account_id]]></fieldDescription>
+	</field>
+	<field name="deleted_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.deleted_at"/>
+		<fieldDescription><![CDATA[deleted_at]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.created_at"/>
+		<fieldDescription><![CDATA[created_at]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.updated_at"/>
+		<fieldDescription><![CDATA[updated_at]]></fieldDescription>
+	</field>
+	<field name="number" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.number"/>
+		<fieldDescription><![CDATA[number]]></fieldDescription>
+	</field>
+	<field name="primary_weather_stid" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.primary_weather_stid"/>
+		<fieldDescription><![CDATA[primary_weather_stid]]></fieldDescription>
+	</field>
+	<field name="country" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.country"/>
+		<fieldDescription><![CDATA[country]]></fieldDescription>
+	</field>
+	<field name="client_id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.client_id"/>
+		<fieldDescription><![CDATA[client_id]]></fieldDescription>
+	</field>
+	<field name="timezone" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.timezone"/>
+		<fieldDescription><![CDATA[timezone]]></fieldDescription>
+	</field>
+	<field name="setting_values" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.setting_values"/>
+		<fieldDescription><![CDATA[setting_values]]></fieldDescription>
+	</field>
+	<field name="my_role" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.my_role"/>
+		<fieldDescription><![CDATA[my_role]]></fieldDescription>
+	</field>
+	<field name="my_user" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.my_user"/>
+		<fieldDescription><![CDATA[my_user]]></fieldDescription>
+	</field>
+	<field name="report_sections" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.report_sections"/>
+		<fieldDescription><![CDATA[report_sections]]></fieldDescription>
+	</field>
+	<field name="account" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.account"/>
+		<fieldDescription><![CDATA[account]]></fieldDescription>
+	</field>
+	<field name="settings" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.project.settings"/>
+		<fieldDescription><![CDATA[settings]]></fieldDescription>
+	</field>
+	<field name="start_time" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.start_time"/>
+		<fieldDescription><![CDATA[start_time]]></fieldDescription>
+	</field>
+	<field name="end_time" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.end_time"/>
+		<fieldDescription><![CDATA[end_time]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.email"/>
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<field name="first_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.first_name"/>
+		<fieldDescription><![CDATA[first_name]]></fieldDescription>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.last_name"/>
+		<fieldDescription><![CDATA[last_name]]></fieldDescription>
+	</field>
+	<field name="company" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.company"/>
+		<fieldDescription><![CDATA[company]]></fieldDescription>
+	</field>
+	<field name="street1" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.street1"/>
+		<fieldDescription><![CDATA[street1]]></fieldDescription>
+	</field>
+	<field name="street2" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.street2"/>
+		<fieldDescription><![CDATA[street2]]></fieldDescription>
+	</field>
+	<field name="account_city" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.city"/>
+		<fieldDescription><![CDATA[city]]></fieldDescription>
+	</field>
+	<field name="account_state" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.state"/>
+		<fieldDescription><![CDATA[state]]></fieldDescription>
+	</field>
+	<field name="account_zip" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.zip"/>
+		<fieldDescription><![CDATA[zip]]></fieldDescription>
+	</field>
+	<field name="account_country" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.country"/>
+		<fieldDescription><![CDATA[country]]></fieldDescription>
+	</field>
+	<field name="language" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.language"/>
+		<fieldDescription><![CDATA[language]]></fieldDescription>
+	</field>
+	<field name="logo_media_id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.logo_media_id"/>
+		<fieldDescription><![CDATA[logo_media_id]]></fieldDescription>
+	</field>
+	<field name="logo_url" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.account.logo.url"/>
+		<fieldDescription><![CDATA[logo]]></fieldDescription>
+	</field>
+	<field name="user" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="^{2}.report.user.name"/>
+		<fieldDescription><![CDATA[user]]></fieldDescription>
+	</field>
+	<field name="value" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="value"/>
+		<fieldDescription><![CDATA[value]]></fieldDescription>
+	</field>
+	<field name="label" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="label"/>
+		<fieldDescription><![CDATA[label]]></fieldDescription>
+	</field>
+	<field name="order" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="order"/>
+		<fieldDescription><![CDATA[order]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="type"/>
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="content" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="content"/>
+		<fieldDescription><![CDATA[content]]></fieldDescription>
+	</field>
+	<sortField name="order"/>
+	<variable name="dfr_date_formatted" class="java.lang.String">
+		<initialValueExpression><![CDATA[String.valueOf(new SimpleDateFormat("MM/dd/yyyy (E)").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{job_date})))]]></initialValueExpression>
+	</variable>
+	<filterExpression><![CDATA[!$F{type}.equals("skip")]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="200" y="0" width="160" height="30" uuid="6cc6270f-7757-415d-bb8e-29e3c29896c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Daily Field Report"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="Float" x="0" y="54" width="555" height="1" uuid="c8d6e720-c258-40d0-a988-9df3f1d34ba9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="380" y="0" width="175" height="50" uuid="67c75f32-f9ef-45cd-94ce-bf511ed537b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="11" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company}+"<br/>"+$F{street1}+"<br/>"+$F{account_city}+", "+$F{account_state}+" "+$F{account_zip}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" isUsingCache="true" onErrorType="Blank">
+				<reportElement x="20" y="0" width="140" height="50" uuid="d4a767bf-e80a-48c0-bacb-be889d9d067c"/>
+				<imageExpression><![CDATA[$P{resource_domain}+$F{logo_url}]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement positionType="Float" x="7" y="61" width="540" height="75" uuid="fcf0da53-0116-48f8-a22b-3362b23f92a9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textField>
+					<reportElement positionType="Float" x="0" y="0" width="540" height="25" uuid="19b36d0f-5693-4249-ab0e-3dc5deec0bb1">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
+						<pen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle" markup="html">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA["<b>Project:</b> "+$F{name}+" (Project No: "+$F{number}+")"]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="0" y="25" width="540" height="25" uuid="1f72d9f5-5603-479f-b10d-ede21e2209b0">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textField>
+						<reportElement positionType="Float" x="0" y="0" width="270" height="25" uuid="088dba99-2fa8-435f-9db9-a610e849f01c">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement verticalAlignment="Middle" markup="html">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{user}.equals(null)||$F{user}.equals("")?"":"<b>Recorded By:</b> "+$F{user}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement positionType="Float" x="270" y="0" width="270" height="25" uuid="f1925638-ffb3-4d28-9cc1-b12ebaa67e4b">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement verticalAlignment="Middle" markup="html">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$V{dfr_date_formatted}.toString().equals("null")||$V{dfr_date_formatted}.equals("")?"":"<b>Date:</b> "+$V{dfr_date_formatted}.toString()]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement positionType="Float" x="0" y="50" width="540" height="25" uuid="59f250f1-f479-4fbe-a892-a3bfd9feec5a">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<textField>
+						<reportElement positionType="Float" x="0" y="0" width="270" height="25" uuid="95a23bc9-8274-4048-9c82-69460c3b459f">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement verticalAlignment="Middle" markup="html">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{start_time}.equals("null")||$F{start_time}.equals("")?"":"<b>Arrival:</b> "+ new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F{start_time}))]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement positionType="Float" x="270" y="0" width="270" height="25" uuid="c2911027-8a33-48fa-a4d8-4043343f75fb">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement verticalAlignment="Middle" markup="html">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{end_time}.equals("null")||$F{end_time}.equals("")?"":"<b>Departure:</b> "+
+
+new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F{end_time}))]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}.intValue() != 1]]></printWhenExpression>
+			<textField>
+				<reportElement x="200" y="0" width="160" height="30" uuid="7011997a-3a16-4858-a117-d12ace22ab9d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Daily Field Report"]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" isUsingCache="true" onErrorType="Blank">
+				<reportElement x="20" y="0" width="140" height="50" uuid="ae09d222-740d-4ec9-b6bb-368112ea45af"/>
+				<imageExpression><![CDATA[$P{resource_domain}+$F{logo_url}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement positionType="Float" x="0" y="59" width="555" height="1" uuid="b1183faa-fa59-4509-8085-e9e879e908aa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement positionType="Float" x="395" y="0" width="140" height="24" uuid="a1bf3735-6647-413f-b002-c34e8c6d0a91">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box topPadding="4" leftPadding="0" bottomPadding="4" rightPadding="4">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" markup="html">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Project No:</b> "+$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="380" y="24" width="155" height="24" uuid="88ef5a50-d84c-47d3-a7c3-6a030436464b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="4">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" markup="html">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Date:</b> "+String.valueOf(new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{job_date})))]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="3" splitType="Stretch">
+			<subreport>
+				<reportElement positionType="Float" x="7" y="2" width="540" height="1" isPrintInFirstWholeBand="true" uuid="b5ce9dec-6f12-4a9e-a66b-a99810a6ff03">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{type}.equals("quotes")]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="label">
+					<subreportParameterExpression><![CDATA[$F{label}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[SUB_DATA_SOURCE("^^.report_sections["+$V{REPORT_COUNT}+"].content")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["quotes_rep_sec_7_9.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="7" y="2" width="540" height="1" isPrintInFirstWholeBand="true" uuid="99699b68-b62f-4561-b5fa-b37d8cc8bf4a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[$F{type}.equals("list")]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="label">
+					<subreportParameterExpression><![CDATA[$F{label}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[SUB_DATA_SOURCE("^^.report_sections["+$V{REPORT_COUNT}+"].content")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["list_rep_sec_7_9.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="7" y="2" width="540" height="1" isPrintInFirstWholeBand="true" uuid="99699b68-b62f-4561-b5fa-b37d8cc8bf4a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{type}.equals("media")]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="label">
+					<subreportParameterExpression><![CDATA[$F{label}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="resource_domain">
+					<subreportParameterExpression><![CDATA[$P{resource_domain}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[SUB_DATA_SOURCE("^^.report_sections["+$V{REPORT_COUNT}+"].content")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["image_rep_sec_7_9.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="7" y="0" width="540" height="1" isPrintInFirstWholeBand="true" uuid="6e48264d-fd1b-48ab-abc7-2f416801f0b5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="label">
+					<subreportParameterExpression><![CDATA[$F{label}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="resource_domain">
+					<subreportParameterExpression><![CDATA[$P{resource_domain}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[SUB_DATA_SOURCE("^^.weather.entries.*")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["weather_7_9.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="24">
+			<textField evaluationTime="Master">
+				<reportElement positionType="Float" x="398" y="0" width="157" height="24" uuid="814dfd37-3914-4f36-b0c8-85fe73a579e9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="4">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{MASTER_CURRENT_PAGE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_12" pageWidth="540" pageHeight="842" columnWidth="540" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="zebra" mode="Opaque">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#EFEFEF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="jsonql">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="project_id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="project_id"/>
+		<fieldDescription><![CDATA[project_id]]></fieldDescription>
+	</field>
+	<field name="stid" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="stid"/>
+		<fieldDescription><![CDATA[stid]]></fieldDescription>
+	</field>
+	<field name="time_slot_date" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="time_slot_date"/>
+		<fieldDescription><![CDATA[time_slot_date]]></fieldDescription>
+	</field>
+	<field name="time_slot_time" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="time_slot_time"/>
+		<fieldDescription><![CDATA[time_slot_time]]></fieldDescription>
+	</field>
+	<field name="attempts" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="attempts"/>
+		<fieldDescription><![CDATA[attempts]]></fieldDescription>
+	</field>
+	<field name="exact_time" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="exact_time"/>
+		<fieldDescription><![CDATA[exact_time]]></fieldDescription>
+	</field>
+	<field name="success" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="success"/>
+		<fieldDescription><![CDATA[success]]></fieldDescription>
+	</field>
+	<field name="air_temp" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="air_temp"/>
+		<fieldDescription><![CDATA[air_temp]]></fieldDescription>
+	</field>
+	<field name="precip_accum_24_hour" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="precip_accum_24_hour"/>
+		<fieldDescription><![CDATA[precip_accum_24_hour]]></fieldDescription>
+	</field>
+	<field name="precip_accum_since_local_midnight" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="precip_accum_since_local_midnight"/>
+		<fieldDescription><![CDATA[precip_accum_since_local_midnight]]></fieldDescription>
+	</field>
+	<field name="relative_humidity" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="relative_humidity"/>
+		<fieldDescription><![CDATA[relative_humidity]]></fieldDescription>
+	</field>
+	<field name="wind_direction" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="wind_direction"/>
+		<fieldDescription><![CDATA[wind_direction]]></fieldDescription>
+	</field>
+	<field name="wind_cardinal_direction" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="wind_cardinal_direction"/>
+		<fieldDescription><![CDATA[wind_cardinal_direction]]></fieldDescription>
+	</field>
+	<field name="wind_gust" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="wind_gust"/>
+		<fieldDescription><![CDATA[wind_gust]]></fieldDescription>
+	</field>
+	<field name="wind_speed" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="wind_speed"/>
+		<fieldDescription><![CDATA[wind_speed]]></fieldDescription>
+	</field>
+	<field name="wind_chill" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="wind_chill"/>
+		<fieldDescription><![CDATA[wind_chill]]></fieldDescription>
+	</field>
+	<field name="heat_index" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="heat_index"/>
+		<fieldDescription><![CDATA[heat_index]]></fieldDescription>
+	</field>
+	<field name="dew_point_temperature" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="dew_point_temperature"/>
+		<fieldDescription><![CDATA[dew_point_temperature]]></fieldDescription>
+	</field>
+	<field name="pressure" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="pressure"/>
+		<fieldDescription><![CDATA[pressure]]></fieldDescription>
+	</field>
+	<field name="sea_level_pressure" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="sea_level_pressure"/>
+		<fieldDescription><![CDATA[sea_level_pressure]]></fieldDescription>
+	</field>
+	<field name="PM_25_concentration" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="PM_25_concentration"/>
+		<fieldDescription><![CDATA[PM_25_concentration]]></fieldDescription>
+	</field>
+	<field name="altimeter" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="altimeter"/>
+		<fieldDescription><![CDATA[altimeter]]></fieldDescription>
+	</field>
+	<field name="volt" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="volt"/>
+		<fieldDescription><![CDATA[volt]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="created_at"/>
+		<fieldDescription><![CDATA[created_at]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="updated_at"/>
+		<fieldDescription><![CDATA[updated_at]]></fieldDescription>
+	</field>
+	<field name="is_primary" class="java.lang.String">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="is_primary"/>
+		<fieldDescription><![CDATA[is_primary]]></fieldDescription>
+	</field>
+	<field name="time_slot" class="java.lang.Long">
+		<property name="net.sf.jasperreports.jsonql.field.expression" value="time_slot"/>
+		<fieldDescription><![CDATA[time_slot]]></fieldDescription>
+	</field>
+	<variable name="wind_val" class="java.lang.String">
+		<variableExpression><![CDATA[$F{wind_cardinal_direction}.equals("null")||$F{wind_cardinal_direction}.equals("")||$F{wind_cardinal_direction}.equals(null)?$F{wind_speed}:$F{wind_speed}.setScale(0, RoundingMode.HALF_UP)+" "+$F{wind_cardinal_direction}]]></variableExpression>
+	</variable>
+	<title>
+		<band height="24">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement positionType="Float" x="0" y="0" width="158" height="24" uuid="f90fe1a4-45dd-454d-9a61-5fd0be7884f3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Weather"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="135" height="20" uuid="2592ea87-c81a-4996-b6d2-6f693a55b0d4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time (Hour)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="135" y="0" width="135" height="20" uuid="fa6b7cb8-25c8-4227-a972-bd8fd0e4b1a6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Air Temperature (F)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="270" y="0" width="135" height="20" uuid="fda6038e-5827-410d-86e2-18294ac2f2a1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precipitation (in)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="405" y="0" width="135" height="20" uuid="2306d87d-6f84-43a5-b462-d12c6f79b550">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Wind (MPH)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isBlankWhenNull="true">
+				<reportElement style="zebra" mode="Opaque" x="0" y="1" width="135" height="18" uuid="5a5085d6-b42c-46be-b65f-0e16427ee59a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{time_slot_time}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="zebra" mode="Opaque" x="135" y="1" width="135" height="18" uuid="467f22f8-c464-4dfc-b248-44a5af744269">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
+				<textFieldExpression><![CDATA[$F{air_temp}.equals("")?null:$F{air_temp}.setScale(0, RoundingMode.HALF_UP)+"&#176"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0" isBlankWhenNull="true">
+				<reportElement style="zebra" mode="Opaque" x="270" y="1" width="135" height="18" uuid="bf27c0bd-1bd1-466a-9b1f-27702e75c2d1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{precip_accum_24_hour}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="zebra" mode="Opaque" x="405" y="1" width="135" height="18" uuid="bf57104a-f9bf-40cf-98b8-43ed6b2dba15">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wind_speed}.setScale(0, RoundingMode.HALF_UP)]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
