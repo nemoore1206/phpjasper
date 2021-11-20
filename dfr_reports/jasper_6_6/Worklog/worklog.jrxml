@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_15" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a78ee60f-e3f6-4436-b3f9-b9967d988b66">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_15" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a78ee60f-e3f6-4436-b3f9-b9967d988b66">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RUNE_FOREMAN"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<import value="com.storesund.jasper_utils.*"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
@@ -252,7 +261,7 @@
 				<textFieldExpression><![CDATA["Daily Worklog Report"]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement positionType="Float" x="0" y="54" width="555" height="1" uuid="2626d88e-1669-400f-82c0-a281b4aabec6">
+				<reportElement positionType="Float" x="6" y="54" width="560" height="1" uuid="2626d88e-1669-400f-82c0-a281b4aabec6">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -260,12 +269,12 @@
 				</graphicElement>
 			</line>
 			<frame>
-				<reportElement positionType="Float" x="0" y="61" width="555" height="79" uuid="df61ea93-add9-4571-b7e2-63bd841f3577">
+				<reportElement positionType="Float" x="6" y="61" width="560" height="79" uuid="df61ea93-add9-4571-b7e2-63bd841f3577">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textField>
-					<reportElement positionType="Float" x="0" y="0" width="555" height="25" uuid="a8ba2b25-a6a5-4b68-8612-6fb2ca880c7d">
+					<reportElement positionType="Float" x="0" y="0" width="560" height="25" uuid="a8ba2b25-a6a5-4b68-8612-6fb2ca880c7d">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					</reportElement>
 					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
@@ -277,7 +286,7 @@
 					<textFieldExpression><![CDATA["<b>Project:</b> "+$F{project_name}+" (Project No: "+$F{number}+")"]]></textFieldExpression>
 				</textField>
 				<frame>
-					<reportElement positionType="Float" x="0" y="25" width="555" height="25" uuid="5cda595c-1d1f-4686-abbb-9fa1e5e4c4e8">
+					<reportElement positionType="Float" x="0" y="25" width="560" height="25" uuid="5cda595c-1d1f-4686-abbb-9fa1e5e4c4e8">
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
@@ -299,7 +308,7 @@
 						<textFieldExpression><![CDATA[$V{dfr_date_formatted}.toString().equals("null")||$V{dfr_date_formatted}.equals("")?"":"<b>Work Date:</b> "+$V{dfr_date_formatted}.toString()]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement positionType="Float" x="280" y="0" width="275" height="25" uuid="6efec07d-1c82-4d16-8ab6-8e6542910786">
+						<reportElement positionType="Float" x="280" y="0" width="280" height="25" uuid="6efec07d-1c82-4d16-8ab6-8e6542910786">
 							<property name="com.jaspersoft.studio.unit.width" value="px"/>
 							<property name="com.jaspersoft.studio.unit.x" value="px"/>
 							<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -314,7 +323,7 @@
 					</textField>
 				</frame>
 				<frame>
-					<reportElement positionType="Float" x="0" y="50" width="555" height="25" uuid="1288e0e7-a36a-43b2-b59c-ade50875fbf0">
+					<reportElement positionType="Float" x="0" y="50" width="560" height="25" uuid="1288e0e7-a36a-43b2-b59c-ade50875fbf0">
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
@@ -336,7 +345,7 @@
 						<textFieldExpression><![CDATA["<b>Prepared By</b>: "+$F{prepared_by}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement positionType="Float" x="280" y="0" width="275" height="25" uuid="915386f3-fd61-490c-bad7-6a3909eb4755">
+						<reportElement positionType="Float" x="280" y="0" width="280" height="25" uuid="915386f3-fd61-490c-bad7-6a3909eb4755">
 							<property name="com.jaspersoft.studio.unit.width" value="px"/>
 							<property name="com.jaspersoft.studio.unit.x" value="px"/>
 							<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -352,7 +361,7 @@
 				</frame>
 			</frame>
 			<line>
-				<reportElement positionType="Float" x="0" y="143" width="555" height="1" uuid="cb0f0b7c-9b63-41a9-bbed-f5f8dc304b1d">
+				<reportElement positionType="Float" x="6" y="143" width="560" height="1" uuid="cb0f0b7c-9b63-41a9-bbed-f5f8dc304b1d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -360,7 +369,7 @@
 				</graphicElement>
 			</line>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="380" y="0" width="175" height="50" uuid="b5acee3a-d511-4a97-bd86-d95ec5b48be7"/>
+				<reportElement x="385" y="0" width="175" height="50" uuid="b5acee3a-d511-4a97-bd86-d95ec5b48be7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
 					<font size="11" isBold="false" isItalic="false"/>
 				</textElement>
@@ -375,7 +384,7 @@
 	<pageFooter>
 		<band height="24">
 			<textField evaluationTime="Master">
-				<reportElement positionType="Float" x="398" y="0" width="157" height="24" uuid="3b92874d-23c0-4feb-b859-d7bfd45fd966">
+				<reportElement positionType="Float" x="403" y="0" width="157" height="24" uuid="3b92874d-23c0-4feb-b859-d7bfd45fd966">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -393,7 +402,7 @@
 	<summary>
 		<band height="1" splitType="Stretch">
 			<subreport>
-				<reportElement x="0" y="0" width="555" height="1" uuid="1d21dd9d-ba07-49a9-adfe-00b29f0baedf">
+				<reportElement x="6" y="0" width="560" height="1" uuid="1d21dd9d-ba07-49a9-adfe-00b29f0baedf">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<subreportParameter name="worklog_classifications">
