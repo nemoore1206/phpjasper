@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_6" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a6bdf3c-c48b-4670-b7b6-112bde5130e4">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_6" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" uuid="8a6bdf3c-c48b-4670-b7b6-112bde5130e4">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RUNE_FIELD"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<parameter name="resource_domain" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["https://api-test-dfr.ngm-inc.com/storage/"]]></defaultValueExpression>
 	</parameter>
@@ -213,7 +222,7 @@
 				<textFieldExpression><![CDATA["Daily Field Report"]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement positionType="Float" x="0" y="54" width="555" height="1" uuid="c8d6e720-c258-40d0-a988-9df3f1d34ba9">
+				<reportElement positionType="Float" x="0" y="54" width="572" height="1" uuid="c8d6e720-c258-40d0-a988-9df3f1d34ba9">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -232,12 +241,12 @@
 				<imageExpression><![CDATA[$P{resource_domain}+$F{logo_url}]]></imageExpression>
 			</image>
 			<frame>
-				<reportElement positionType="Float" x="7" y="61" width="540" height="75" uuid="fcf0da53-0116-48f8-a22b-3362b23f92a9">
+				<reportElement positionType="Float" x="6" y="61" width="560" height="75" uuid="fcf0da53-0116-48f8-a22b-3362b23f92a9">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textField>
-					<reportElement positionType="Float" x="0" y="0" width="540" height="25" uuid="19b36d0f-5693-4249-ab0e-3dc5deec0bb1">
+					<reportElement positionType="Float" x="0" y="0" width="560" height="25" uuid="19b36d0f-5693-4249-ab0e-3dc5deec0bb1">
 						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					</reportElement>
 					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4">
@@ -249,7 +258,7 @@
 					<textFieldExpression><![CDATA["<b>Project:</b> "+$F{name}+" (Project No: "+$F{number}+")"]]></textFieldExpression>
 				</textField>
 				<frame>
-					<reportElement positionType="Float" x="0" y="25" width="540" height="25" uuid="1f72d9f5-5603-479f-b10d-ede21e2209b0">
+					<reportElement positionType="Float" x="0" y="25" width="560" height="25" uuid="1f72d9f5-5603-479f-b10d-ede21e2209b0">
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
@@ -270,7 +279,7 @@
 						<textFieldExpression><![CDATA[$F{user}.equals(null)||$F{user}.equals("")?"":"<b>Recorded By:</b> "+$F{user}]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement positionType="Float" x="270" y="0" width="270" height="25" uuid="f1925638-ffb3-4d28-9cc1-b12ebaa67e4b">
+						<reportElement positionType="Float" x="270" y="0" width="290" height="25" uuid="f1925638-ffb3-4d28-9cc1-b12ebaa67e4b">
 							<property name="com.jaspersoft.studio.unit.width" value="px"/>
 							<property name="com.jaspersoft.studio.unit.x" value="px"/>
 							<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -285,7 +294,7 @@
 					</textField>
 				</frame>
 				<frame>
-					<reportElement positionType="Float" x="0" y="50" width="540" height="25" uuid="59f250f1-f479-4fbe-a892-a3bfd9feec5a">
+					<reportElement positionType="Float" x="0" y="50" width="560" height="25" uuid="59f250f1-f479-4fbe-a892-a3bfd9feec5a">
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
@@ -306,7 +315,7 @@
 						<textFieldExpression><![CDATA[$F{start_time}.equals("null")||$F{start_time}.equals("")?"":"<b>Arrival:</b> "+ new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F{start_time}))]]></textFieldExpression>
 					</textField>
 					<textField>
-						<reportElement positionType="Float" x="270" y="0" width="270" height="25" uuid="c2911027-8a33-48fa-a4d8-4043343f75fb">
+						<reportElement positionType="Float" x="270" y="0" width="290" height="25" uuid="c2911027-8a33-48fa-a4d8-4043343f75fb">
 							<property name="com.jaspersoft.studio.unit.width" value="px"/>
 							<property name="com.jaspersoft.studio.unit.x" value="px"/>
 							<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -340,7 +349,7 @@ new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F
 				<imageExpression><![CDATA[$P{resource_domain}+$F{logo_url}]]></imageExpression>
 			</image>
 			<line>
-				<reportElement positionType="Float" x="0" y="59" width="555" height="1" uuid="b1183faa-fa59-4509-8085-e9e879e908aa">
+				<reportElement positionType="Float" x="0" y="59" width="572" height="1" uuid="b1183faa-fa59-4509-8085-e9e879e908aa">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
@@ -349,7 +358,7 @@ new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F
 				</graphicElement>
 			</line>
 			<textField>
-				<reportElement positionType="Float" x="395" y="0" width="140" height="24" uuid="a1bf3735-6647-413f-b002-c34e8c6d0a91">
+				<reportElement positionType="Float" x="415" y="3" width="140" height="24" uuid="a1bf3735-6647-413f-b002-c34e8c6d0a91">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
@@ -362,7 +371,7 @@ new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F
 				<textFieldExpression><![CDATA["<b>Project No:</b> "+$F{id}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement positionType="Float" x="380" y="24" width="155" height="24" uuid="88ef5a50-d84c-47d3-a7c3-6a030436464b">
+				<reportElement positionType="Float" x="400" y="27" width="155" height="24" uuid="88ef5a50-d84c-47d3-a7c3-6a030436464b">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -398,7 +407,7 @@ new SimpleDateFormat("hh:mm a").format(new SimpleDateFormat("HH:mm:ss").parse($F
 	<summary>
 		<band height="40">
 			<subreport>
-				<reportElement positionType="Float" x="0" y="2" width="555" height="38" isPrintWhenDetailOverflows="true" uuid="54b4560c-f871-4355-a951-4aee84644bb8">
+				<reportElement positionType="Float" x="6" y="2" width="560" height="38" isPrintWhenDetailOverflows="true" uuid="54b4560c-f871-4355-a951-4aee84644bb8">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>

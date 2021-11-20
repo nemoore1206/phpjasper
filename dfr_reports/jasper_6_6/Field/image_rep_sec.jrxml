@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_7" columnCount="2" printOrder="Horizontal" pageWidth="540" pageHeight="230" columnWidth="270" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Error" isIgnorePagination="true" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_7" columnCount="2" printOrder="Horizontal" pageWidth="560" pageHeight="230" columnWidth="280" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Error" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RUNE_FIELD"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -48,7 +48,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="230">
+		<band height="210">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField isStretchWithOverflow="true">
 				<reportElement positionType="Float" x="0" y="0" width="158" height="24" isPrintInFirstWholeBand="true" uuid="fc7d6a5a-c28c-46b9-b7d2-9b65ac6389a2">
@@ -64,17 +64,17 @@
 				<textFieldExpression><![CDATA[$P{label}]]></textFieldExpression>
 			</textField>
 			<frame>
-				<reportElement positionType="Float" x="0" y="24" width="265" height="155" isPrintWhenDetailOverflows="true" uuid="9dc6f7ad-42cc-45ef-9dfd-5330e0534319">
+				<reportElement positionType="Float" x="0" y="24" width="275" height="155" isPrintWhenDetailOverflows="true" uuid="9dc6f7ad-42cc-45ef-9dfd-5330e0534319">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<image scaleImage="RetainShape" hAlign="Center" onErrorType="Icon">
-					<reportElement positionType="Float" x="0" y="0" width="265" height="150" isRemoveLineWhenBlank="true" uuid="b3bf0419-7218-4d43-9144-c789cf22877a">
+					<reportElement positionType="Float" x="0" y="0" width="275" height="150" isRemoveLineWhenBlank="true" uuid="b3bf0419-7218-4d43-9144-c789cf22877a">
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					</reportElement>
 					<imageExpression><![CDATA[$P{resource_domain}+$F{url}]]></imageExpression>
 				</image>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="154" width="265" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a8920ce6-8aba-4465-bf2b-c188edb83812">
+					<reportElement positionType="Float" x="0" y="154" width="275" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a8920ce6-8aba-4465-bf2b-c188edb83812">
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					</reportElement>
@@ -85,7 +85,7 @@
 					<textFieldExpression><![CDATA[$F{caption}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="152" width="265" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="ffcf2afd-a773-494f-813c-b402da6de912">
+					<reportElement positionType="Float" x="0" y="152" width="275" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="ffcf2afd-a773-494f-813c-b402da6de912">
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					</reportElement>
@@ -96,7 +96,7 @@
 					<textFieldExpression><![CDATA["Uploaded: "+String.valueOf(new SimpleDateFormat("MM/dd/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{created_at}.substring(0,10))))+" ("+$F{uploader}+")"]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement positionType="Float" x="0" y="153" width="265" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2ad43a66-afcc-4869-9343-e3f18cc30dae">
+					<reportElement positionType="Float" x="0" y="153" width="275" height="1" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2ad43a66-afcc-4869-9343-e3f18cc30dae">
 						<property name="com.jaspersoft.studio.unit.x" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>

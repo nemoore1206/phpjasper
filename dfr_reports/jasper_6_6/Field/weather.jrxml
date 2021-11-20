@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_12" pageWidth="540" pageHeight="842" columnWidth="540" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_12" pageWidth="560" pageHeight="62" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<style name="zebra" mode="Opaque">
 		<conditionalStyle>
 			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
@@ -147,7 +156,7 @@
 		<band height="20">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="135" height="20" uuid="2592ea87-c81a-4996-b6d2-6f693a55b0d4">
+				<reportElement mode="Opaque" x="0" y="0" width="140" height="20" uuid="2592ea87-c81a-4996-b6d2-6f693a55b0d4">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
@@ -159,7 +168,7 @@
 				<text><![CDATA[Time (Hour)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="135" y="0" width="135" height="20" uuid="fa6b7cb8-25c8-4227-a972-bd8fd0e4b1a6">
+				<reportElement mode="Opaque" x="140" y="0" width="140" height="20" uuid="fa6b7cb8-25c8-4227-a972-bd8fd0e4b1a6">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -171,7 +180,7 @@
 				<text><![CDATA[Air Temperature (F)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="270" y="0" width="135" height="20" uuid="fda6038e-5827-410d-86e2-18294ac2f2a1">
+				<reportElement mode="Opaque" x="280" y="0" width="140" height="20" uuid="fda6038e-5827-410d-86e2-18294ac2f2a1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -183,7 +192,7 @@
 				<text><![CDATA[Precipitation (in)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="405" y="0" width="135" height="20" uuid="2306d87d-6f84-43a5-b462-d12c6f79b550">
+				<reportElement mode="Opaque" x="420" y="0" width="140" height="20" uuid="2306d87d-6f84-43a5-b462-d12c6f79b550">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box>
@@ -200,26 +209,26 @@
 		<band height="19" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<textField isBlankWhenNull="true">
-				<reportElement style="zebra" mode="Opaque" x="0" y="1" width="135" height="18" uuid="5a5085d6-b42c-46be-b65f-0e16427ee59a"/>
+				<reportElement style="zebra" mode="Opaque" x="0" y="1" width="140" height="18" uuid="5a5085d6-b42c-46be-b65f-0e16427ee59a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{time_slot_time}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement style="zebra" mode="Opaque" x="135" y="1" width="135" height="18" uuid="467f22f8-c464-4dfc-b248-44a5af744269">
+				<reportElement style="zebra" mode="Opaque" x="140" y="1" width="140" height="18" uuid="467f22f8-c464-4dfc-b248-44a5af744269">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html"/>
 				<textFieldExpression><![CDATA[$F{air_temp}.equals("")?null:$F{air_temp}.setScale(0, RoundingMode.HALF_UP)+"&#176"]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0" isBlankWhenNull="true">
-				<reportElement style="zebra" mode="Opaque" x="270" y="1" width="135" height="18" uuid="bf27c0bd-1bd1-466a-9b1f-27702e75c2d1">
+				<reportElement style="zebra" mode="Opaque" x="280" y="1" width="140" height="18" uuid="bf27c0bd-1bd1-466a-9b1f-27702e75c2d1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{precip_accum_24_hour}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="zebra" mode="Opaque" x="405" y="1" width="135" height="18" uuid="bf57104a-f9bf-40cf-98b8-43ed6b2dba15">
+				<reportElement style="zebra" mode="Opaque" x="420" y="1" width="140" height="18" uuid="bf57104a-f9bf-40cf-98b8-43ed6b2dba15">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>

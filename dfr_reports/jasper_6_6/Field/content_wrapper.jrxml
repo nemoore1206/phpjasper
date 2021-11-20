@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_7" pageWidth="540" pageHeight="230" columnWidth="540" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_7" pageWidth="560" pageHeight="10" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Error" uuid="fd015338-e12b-4712-9365-7cf966e262f8">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="RUNE_FIELD"/>
-	<property name="com.jaspersoft.studio.unit." value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<parameter name="resource_domain" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["https://api-test-dfr.ngm-inc.com/storage/"]]></defaultValueExpression>
 	</parameter>
@@ -42,9 +33,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="3">
+		<band height="10">
 			<subreport>
-				<reportElement positionType="Float" x="0" y="2" width="540" height="1" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="b5ce9dec-6f12-4a9e-a66b-a99810a6ff03">
+				<reportElement positionType="Float" x="0" y="2" width="560" height="2" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="b5ce9dec-6f12-4a9e-a66b-a99810a6ff03">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -57,7 +48,7 @@
 				<subreportExpression><![CDATA["quotes_rep_sec.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" x="0" y="2" width="540" height="1" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="99699b68-b62f-4561-b5fa-b37d8cc8bf4a">
+				<reportElement positionType="Float" x="0" y="6" width="560" height="2" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="99699b68-b62f-4561-b5fa-b37d8cc8bf4a">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
@@ -70,7 +61,7 @@
 				<subreportExpression><![CDATA["list_rep_sec.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" x="0" y="0" width="540" height="1" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="99699b68-b62f-4561-b5fa-b37d8cc8bf4a">
+				<reportElement positionType="Float" x="0" y="4" width="560" height="2" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="99699b68-b62f-4561-b5fa-b37d8cc8bf4a">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<printWhenExpression><![CDATA[$F{type}.equals("media")]]></printWhenExpression>
@@ -82,7 +73,7 @@
 				<subreportExpression><![CDATA["image_rep_sec.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="0" width="540" height="1" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="6e48264d-fd1b-48ab-abc7-2f416801f0b5">
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="0" width="560" height="2" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="6e48264d-fd1b-48ab-abc7-2f416801f0b5">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
